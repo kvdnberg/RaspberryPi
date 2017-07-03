@@ -6,4 +6,5 @@ This repo contains some configuration files to have the Raspberry Pi startup wit
 Files:
 
 ~/.config/lxsession/LXDE-pi/autostart
+
 ~/chrome_startup.sh
