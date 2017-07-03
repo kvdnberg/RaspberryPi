@@ -1,0 +1,14 @@
+# ~/.config/lxsession/LXDE-pi/autostart
+
+# Adapted from: https://github.com/elalemanyo/raspberry-pi-kiosk-screen
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+#@xscreensaver -no-splash
+@point-rpi
+@xset s off
+@xset s noblank
+@xset -dpms
+@/bin/sh /home/pi/chrome_startup.sh
+
+# --disable-session-crashed-bubble stopped working in recent versions of Chromium
+@chromium-browser --noerrdialogs --disable-session-crashed-bubble --disable-infobars --kiosk https://your.dashboard.url
